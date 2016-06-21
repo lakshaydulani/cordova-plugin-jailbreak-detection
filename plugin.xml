@@ -8,17 +8,17 @@
     <engines>
         <engine name="cordova" version=">=3.0.0" />
     </engines>
-    <js-module src="www/jailbreakdetection.js" name="JailbreakDetection">
-        <clobbers target="jailbreakdetection" />
+    <js-module src="www/x.js" name="x">
+        <clobbers target="x" />
     </js-module>
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="JailbreakDetection">
-                <param name="ios-package" value="JailbreakDetection" />
+            <feature name="x">
+                <param name="ios-package" value="x" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-        <header-file src="src/ios/JailbreakDetection.h" />
-        <source-file src="src/ios/JailbreakDetection.m" />
+        <header-file src="src/ios/x.h" />
+        <source-file src="src/ios/x.m" />
     </platform>
 </plugin>
