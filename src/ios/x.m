@@ -6,11 +6,11 @@
 
 #import "Cordova/CDV.h"
 #import "Cordova/CDVViewController.h"
-#import "JailbreakDetection.h"
+#import "x.h"
 
-@implementation JailbreakDetection
+@implementation x
 
-- (void) isJailbroken:(CDVInvokedUrlCommand*)command;
+- (void) xs:(CDVInvokedUrlCommand*)command;
 {
     CDVPluginResult *pluginResult;
 
