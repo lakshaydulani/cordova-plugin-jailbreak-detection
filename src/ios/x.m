@@ -50,8 +50,8 @@
     }
 
     NSError *error;
-    NSString *testWriteText = @"Jailbreak test";
-    NSString *testWritePath = @"/private/jailbreaktest.txt";
+    NSString *testWriteText = @"jb test";
+    NSString *testWritePath = @"/private/jbtest.txt";
 
     [testWriteText writeToFile:testWritePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
 
