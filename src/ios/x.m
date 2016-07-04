@@ -1,8 +1,3 @@
-//
-//  JailbreakDetection.m
-//  Copyright (c) 2014 Lee Crossley - http://ilee.co.uk
-//  Techniques from http://highaltitudehacks.com/2013/12/17/ios-application-security-part-24-jailbreak-detection-and-evasion/
-//
 
 #import "Cordova/CDV.h"
 #import "Cordova/CDVViewController.h"
@@ -16,8 +11,8 @@
 
     @try
     {
-        bool jailbroken = [self jailbroken];
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:jailbroken];
+        bool xsj = [self xsj];
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:xsj];
     }
     @catch (NSException *exception)
     {
@@ -29,7 +24,7 @@
     }
 }
 
-- (bool) jailbroken {
+- (bool) xsj {
 
 #if !(TARGET_IPHONE_SIMULATOR)
 
